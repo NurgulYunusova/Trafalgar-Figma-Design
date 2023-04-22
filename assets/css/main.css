@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+body {
+  font-family: "Mulish", sans-serif;
+}
+body header {
+  width: 100%;
+}
+body header .container {
+  width: 100%;
+  padding: 56px 191px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .container .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+body header .container .brand .logo {
+  background-color: #458ff6;
+  border-radius: 100%;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+}
+body header .container .brand h5 {
+  color: #233348;
+  font-size: 24px;
+  font-weight: 700;
+}
+body header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+body header .container nav ul li a {
+  color: #1f1534;
+  opacity: 0.5;
+  font-weight: 400;
+}
+body header .container nav ul li .home {
+  font-weight: 700;
+  opacity: 1;
+}
+body .mainPageSection {
+  width: 100%;
+}
+body .mainPageSection .container {
+  width: 100%;
+  padding: 0 163px 0 190px;
+  display: flex;
+  align-items: flex-start;
+  gap: 109px;
+}
+body .mainPageSection .container .leftSection h1 {
+  font-weight: 700;
+  color: #000;
+  font-size: 48px;
+}
+body .mainPageSection .container .leftSection p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7d7987;
+  margin: 25px 0 45px;
+}
+body .mainPageSection .container .leftSection .consultTodayBtn {
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background-color: #458ff6;
+  border: 0;
+  padding: 17px 45px;
+}
+body .mainPageSection .container .rightSection img {
+  width: 693px;
+  height: 598px;
+  margin-top: -110px;
+}
+body .servicesSection {
+  width: 100%;
+}
+body .servicesSection .container {
+  width: 100%;
+  padding: 192px 240px 0;
+  background-color: antiquewhite;
+}
+body .servicesSection .container .servicesSectionHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .servicesSection .container .servicesSectionHeading h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+body .servicesSection .container .servicesSectionHeading .divider {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 33px 0;
+}
+body .servicesSection .container .servicesSectionHeading p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+  width: 952px;
+}
+body .servicesSection .container .servicesList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 34px;
+  margin-top: 80px;
+  margin-bottom: 72px;
+}
+body .servicesSection .container .servicesList .service {
+  width: 350px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+body .servicesSection .container .servicesList .service .text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 30px 0 10px;
+}
+body .servicesSection .container .servicesList .service .text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+}
+body .servicesSection .container .learnMoreButton {
+  text-align: center;
+}
+body .servicesSection .container .learnMoreButton .learnMoreBtn {
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458ff6;
+  background-color: #fff;
+  border: 0;
+  padding: 17px 45px;
+  border: 1.4px solid #458ff6;
+}
+body .healthcareProviderSection {
+  width: 100%;
+}
+body .healthcareProviderSection .container {
+  width: 100%;
+  padding: 221px 192px 0 135px;
+  display: flex;
+  gap: 142px;
+  align-items: center;
+}
+body .healthcareProviderSection .container .rightSection h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+body .healthcareProviderSection .container .rightSection .divider {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 33px 0;
+}
+body .healthcareProviderSection .container .rightSection p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+  margin-bottom: 40px;
+}
+body .healthcareProviderSection .container .rightSection .learnMoreBtn {
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458ff6;
+  background-color: #fff;
+  border: 0;
+  padding: 17px 45px;
+  border: 1.4px solid #458ff6;
+}
+body .downloadSection {
+  width: 100%;
+}
+body .downloadSection .container {
+  width: 100%;
+  display: flex;
+  padding: 250px 164px 260px 280px;
+  gap: 71px;
+  align-items: center;
+}
+body .downloadSection .container .leftSection {
+  width: 370px;
+}
+body .downloadSection .container .leftSection h2 {
+  font-weight: 700;
+  font-size: 36px;
+  width: 255px;
+  line-height: 48px;
+}
+body .downloadSection .container .leftSection .divider {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 33px 0;
+}
+body .downloadSection .container .leftSection p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+  margin-bottom: 40px;
+}
+body .downloadSection .container .leftSection .downloadBtn {
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458ff6;
+  background-color: #fff;
+  border: 0;
+  padding: 17px 45px;
+  border: 1.4px solid #458ff6;
+  display: flex;
+  gap: 14.8px;
+  align-items: center;
+}
+body .testimonialsSection {
+  width: 100%;
+  padding: 0 240px;
+}
+body .testimonialsSection .container {
+  width: 100%;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+  padding: 70px 110px;
+}
+body .testimonialsSection .container .whatCustomerSays {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .testimonialsSection .container .whatCustomerSays h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+body .testimonialsSection .container .whatCustomerSays .divider {
+  width: 56px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 33px 0;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion {
+  display: flex;
+  gap: 110px;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  color: rgba(255, 255, 255, 0.85);
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection {
+  display: flex;
+  align-items: center;
+}
+body .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  width: 420px;
+}
+body .latestArticleSection {
+  width: 100%;
+}
+body .latestArticleSection .container {
+  width: 100%;
+  padding: 202px 240px;
+}
+body .latestArticleSection .container .articlesHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .latestArticleSection .container .articlesHeading h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+}
+body .latestArticleSection .container .articlesHeading .divider {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 33px 0;
+}
+body .latestArticleSection .container .articles {
+  display: flex;
+  gap: 35px;
+  margin: 76px 0 72px;
+}
+body .latestArticleSection .container .articles .article {
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+body .latestArticleSection .container .articles .article img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+body .latestArticleSection .container .articles .article .articleText {
+  padding: 25px 40px 25px 35px;
+}
+body .latestArticleSection .container .articles .article .articleText h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+}
+body .latestArticleSection .container .articles .article .articleText p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+  margin: 12px 0 25px;
+}
+body .latestArticleSection .container .articles .article .articleText a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ed;
+}
+body .latestArticleSection .container .articles .article .articleText a svg {
+  margin-left: 10px;
+}
+body .latestArticleSection .container .viewAllButton {
+  display: flex;
+  justify-content: center;
+}
+body .latestArticleSection .container .viewAllButton .viewAllBtn {
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458ff6;
+  background-color: #fff;
+  border: 0;
+  padding: 17px 45px;
+  border: 1.4px solid #458ff6;
+}
+body footer {
+  width: 100%;
+}
+body footer .container {
+  width: 100%;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}/*# sourceMappingURL=main.css.map */

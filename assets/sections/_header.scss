@@ -1,0 +1,451 @@
+body {
+  font-family: $base-font;
+
+  // ----- HEADER -----
+  header {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding: 56px 191px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .logo {
+          background-color: $base-color;
+          border-radius: 100%;
+          width: 41px;
+          height: 41px;
+          @include center();
+          color: $white;
+          font-weight: 700;
+          font-size: 26px;
+        }
+
+        h5 {
+          color: $black-1;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+
+          li {
+            a {
+              color: $black-2;
+              opacity: 0.5;
+              font-weight: 400;
+            }
+
+            .home {
+              font-weight: 700;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ----- MAIN PAGE SECTION -----
+  .mainPageSection {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding: 0 163px 0 190px;
+      display: flex;
+      align-items: flex-start;
+      gap: 109px;
+
+      .leftSection {
+        h1 {
+          font-weight: 700;
+          color: #000;
+          font-size: 48px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 32px;
+          color: $text-color;
+          margin: 25px 0 45px;
+        }
+
+        .consultTodayBtn {
+          @include button();
+        }
+      }
+
+      .rightSection {
+        img {
+          width: 693px;
+          height: 598px;
+          margin-top: -110px;
+        }
+      }
+    }
+  }
+
+  // ----- SERVICES SECTION -----
+  .servicesSection {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding: 192px 240px 0;
+      background-color: antiquewhite;
+
+      .servicesSectionHeading {
+        @include center();
+        flex-direction: column;
+
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+        }
+
+        .divider {
+          @include divider();
+        }
+
+        p {
+          text-align: center;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
+          color: $text-color;
+          width: 952px;
+        }
+      }
+
+      .servicesList {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 34px;
+        margin-top: 80px;
+        margin-bottom: 72px;
+
+        .service {
+          width: 350px;
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          border-radius: 20px;
+          padding: 50px 40px;
+          background-color: $white;
+
+          .text {
+            h3 {
+              font-weight: 700;
+              font-size: 24px;
+              margin: 30px 0 10px;
+            }
+
+            p {
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 28px;
+              color: $text-color;
+            }
+          }
+        }
+      }
+
+      .learnMoreButton {
+        text-align: center;
+
+        .learnMoreBtn {
+          @include button($bg-color: $white, $color: $base-color);
+          border: 1.4px solid $base-color;
+        }
+      }
+    }
+  }
+
+  // ----- HEALTHCARE PROVIDES SECTION -----
+  .healthcareProviderSection {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding: 221px 192px 0 135px;
+      display: flex;
+      gap: 142px;
+      align-items: center;
+
+      .rightSection {
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+        }
+
+        .divider {
+          @include divider();
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
+          color: $text-color;
+          margin-bottom: 40px;
+        }
+
+        .learnMoreBtn {
+          @include button($bg-color: $white, $color: $base-color);
+          border: 1.4px solid $base-color;
+        }
+      }
+    }
+  }
+
+  // ----- DOWNLOAD SECTION -----
+  .downloadSection {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      display: flex;
+      padding: 250px 164px 260px 280px;
+      gap: 71px;
+      align-items: center;
+
+      .leftSection {
+        width: 370px;
+
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+          width: 255px;
+          line-height: 48px;
+        }
+
+        .divider {
+          @include divider();
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
+          color: $text-color;
+          margin-bottom: 40px;
+        }
+
+        .downloadBtn {
+          @include button($bg-color: $white, $color: $base-color);
+          border: 1.4px solid $base-color;
+          display: flex;
+          gap: 14.8px;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  // ----- TESTIMONIALS SECTION -----
+  .testimonialsSection {
+    width: 100%;
+    padding: 0 240px;
+
+    .container {
+      width: 100%;
+      background: linear-gradient(
+        208.18deg,
+        $gradient-color-1 9.05%,
+        $gradient-color-2 76.74%
+      );
+      border-radius: 24px;
+      padding: 70px 110px;
+
+      .whatCustomerSays {
+        color: $white;
+        @include center();
+        flex-direction: column;
+
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 48px;
+        }
+
+        .divider {
+          @include divider($bg-color: $white);
+        }
+
+        .customersOpinion {
+          display: flex;
+          gap: 110px;
+
+          .leftSection {
+            display: flex;
+            gap: 33px;
+            align-items: center;
+
+            img {
+              border-radius: 100%;
+              border: 5px solid $white;
+            }
+
+            .customerName {
+              h3 {
+                font-weight: 700;
+                font-size: 22px;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 48px;
+                color: rgba(255, 255, 255, 0.85);
+              }
+            }
+          }
+
+          .rightSection {
+            display: flex;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 19px;
+              line-height: 30px;
+              color: rgba(255, 255, 255, 0.9);
+              width: 420px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ----- LATEST ARTICLE SECTION -----
+  .latestArticleSection {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding: 202px 240px;
+
+      .articlesHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 56px;
+        }
+
+        .divider {
+          @include divider();
+        }
+      }
+
+      .articles {
+        display: flex;
+        gap: 35px;
+        margin: 76px 0 72px;
+
+        .article {
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          border-radius: 20px;
+
+          img {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+          }
+
+          .articleText {
+            padding: 25px 40px 25px 35px;
+
+            h3 {
+              font-weight: 700;
+              font-size: 21px;
+              line-height: 32px;
+            }
+
+            p {
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 28px;
+              color: $text-color;
+              margin: 12px 0 25px;
+            }
+
+            a {
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 28px;
+              color: $link-color;
+
+              svg {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .viewAllButton {
+        display: flex;
+        justify-content: center;
+
+        .viewAllBtn {
+          @include button($bg-color: $white, $color: $base-color);
+          border: 1.4px solid $base-color;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      background: linear-gradient(
+        183.41deg,
+        $gradient-color-1 -8.57%,
+        $gradient-color-282.96%
+      );
+
+      .aboutBrand {
+        .brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .logo {
+            background-color: $white;
+            border-radius: 100%;
+            width: 41px;
+            height: 41px;
+            @include center();
+            color: $base-color;
+            font-weight: 700;
+            font-size: 26px;
+          }
+
+          h5 {
+            color: $black-1;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
