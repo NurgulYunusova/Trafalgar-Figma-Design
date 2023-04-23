@@ -1,23 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
-body {
+header {
   font-family: "Mulish", sans-serif;
-}
-body header {
   width: 100%;
 }
-body header .container {
+header .container {
   width: 100%;
   padding: 56px 191px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body header .container .brand {
+header .container .brand {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-body header .container .brand .logo {
+header .container .brand .logo {
   background-color: #458ff6;
   border-radius: 100%;
   width: 41px;
@@ -29,48 +27,93 @@ body header .container .brand .logo {
   font-weight: 700;
   font-size: 26px;
 }
-body header .container .brand h5 {
+header .container .brand h5 {
   color: #233348;
   font-size: 24px;
   font-weight: 700;
 }
-body header .container nav ul {
+header .container nav ul {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-body header .container nav ul li a {
+header .container nav ul li a {
   color: #1f1534;
   opacity: 0.5;
   font-weight: 400;
 }
-body header .container nav ul li .home {
+header .container nav ul li .home {
   font-weight: 700;
   opacity: 1;
 }
-body .mainPageSection {
-  width: 100%;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    position: relative;
+  }
+  header .container {
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px 0;
+  }
+  header .element {
+    position: absolute;
+    top: 130px;
+  }
 }
-body .mainPageSection .container {
+@media screen and (max-width: 767px) {
+  header .container {
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px 0;
+    gap: 30px;
+  }
+  header .container .brand {
+    gap: 8px;
+  }
+  header .container .brand .logo {
+    width: 31px;
+    height: 31px;
+    font-size: 18px;
+  }
+  header .container .brand h5 {
+    font-size: 18px;
+  }
+  header .container nav ul {
+    gap: 30px;
+  }
+  header .container nav ul li a {
+    font-size: 13px;
+  }
+  header .element {
+    display: none;
+  }
+}
+.mainPageSection {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+}
+.mainPageSection .container {
   width: 100%;
   padding: 0 163px 0 190px;
   display: flex;
   align-items: flex-start;
   gap: 109px;
 }
-body .mainPageSection .container .leftSection h1 {
+.mainPageSection .container .leftSection h1 {
   font-weight: 700;
   color: #000;
   font-size: 48px;
+  line-height: 56px;
 }
-body .mainPageSection .container .leftSection p {
+.mainPageSection .container .leftSection p {
   font-weight: 300;
   font-size: 21px;
   line-height: 32px;
   color: #7d7987;
   margin: 25px 0 45px;
 }
-body .mainPageSection .container .leftSection .consultTodayBtn {
+.mainPageSection .container .leftSection .consultTodayBtn {
   border-radius: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -78,38 +121,115 @@ body .mainPageSection .container .leftSection .consultTodayBtn {
   background-color: #458ff6;
   border: 0;
   padding: 17px 45px;
+  font-family: "Mulish", sans-serif;
 }
-body .mainPageSection .container .rightSection img {
+.mainPageSection .container .rightSection img {
   width: 693px;
   height: 598px;
   margin-top: -110px;
 }
-body .servicesSection {
-  width: 100%;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainPageSection .container {
+    gap: 30px;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .mainPageSection .container .leftSection {
+    width: 40%;
+  }
+  .mainPageSection .container .leftSection h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .mainPageSection .container .leftSection p {
+    font-size: 18px;
+    margin: 20px 0 35px;
+    line-height: 28px;
+  }
+  .mainPageSection .container .leftSection .consultTodayBtn {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
+  .mainPageSection .container .rightSection {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainPageSection .container .rightSection img {
+    width: 100%;
+    margin: 0;
+  }
 }
-body .servicesSection .container {
+@media screen and (max-width: 767px) {
+  .mainPageSection {
+    margin: 30px 0;
+  }
+  .mainPageSection .container {
+    gap: 30px;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .mainPageSection .container .leftSection {
+    width: 40%;
+  }
+  .mainPageSection .container .leftSection h1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .mainPageSection .container .leftSection p {
+    font-size: 16px;
+    margin: 20px 0 30px;
+    line-height: 28px;
+  }
+  .mainPageSection .container .leftSection .consultTodayBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+  }
+  .mainPageSection .container .rightSection {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainPageSection .container .rightSection img {
+    width: 100%;
+    margin: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+.servicesSection {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+}
+.servicesSection .container {
   width: 100%;
   padding: 192px 240px 0;
-  background-color: antiquewhite;
+  position: relative;
 }
-body .servicesSection .container .servicesSectionHeading {
+.servicesSection .container .servicesSectionHeading {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-body .servicesSection .container .servicesSectionHeading h2 {
+.servicesSection .container .servicesSectionHeading h2 {
   font-weight: 700;
   font-size: 36px;
+  line-height: 56px;
 }
-body .servicesSection .container .servicesSectionHeading .divider {
+.servicesSection .container .servicesSectionHeading .divider {
   width: 56px;
   height: 2px;
   background-color: #000;
   border-radius: 5px;
   margin: 33px 0;
 }
-body .servicesSection .container .servicesSectionHeading p {
+.servicesSection .container .servicesSectionHeading p {
   text-align: center;
   font-weight: 300;
   font-size: 18px;
@@ -117,36 +237,55 @@ body .servicesSection .container .servicesSectionHeading p {
   color: #7d7987;
   width: 952px;
 }
-body .servicesSection .container .servicesList {
+.servicesSection .container .servicesList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   gap: 34px;
   margin-top: 80px;
   margin-bottom: 72px;
 }
-body .servicesSection .container .servicesList .service {
-  width: 350px;
+.servicesSection .container .servicesList .element {
+  position: absolute;
+  left: 0;
+  top: 180px;
+  z-index: -1;
+}
+.servicesSection .container .servicesList .service {
+  width: 30%;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
   padding: 50px 40px;
   background-color: #fff;
 }
-body .servicesSection .container .servicesList .service .text h3 {
+.servicesSection .container .servicesList .service .serviceImage {
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+.servicesSection .container .servicesList .service .text h3 {
   font-weight: 700;
   font-size: 24px;
-  margin: 30px 0 10px;
+  line-height: 56px;
+  margin: 30px 0 15px;
 }
-body .servicesSection .container .servicesList .service .text p {
+.servicesSection .container .servicesList .service .text p {
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   color: #7d7987;
 }
-body .servicesSection .container .learnMoreButton {
+.servicesSection .container .servicesList .circlesElement {
+  position: absolute;
+  right: 190px;
+  bottom: 460px;
+  z-index: -1;
+}
+.servicesSection .container .learnMoreButton {
   text-align: center;
 }
-body .servicesSection .container .learnMoreButton .learnMoreBtn {
+.servicesSection .container .learnMoreButton .learnMoreBtn {
   border-radius: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -154,37 +293,141 @@ body .servicesSection .container .learnMoreButton .learnMoreBtn {
   background-color: #fff;
   border: 0;
   padding: 17px 45px;
+  font-family: "Mulish", sans-serif;
   border: 1.4px solid #458ff6;
 }
-body .healthcareProviderSection {
-  width: 100%;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .servicesSection .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .servicesSection .container .servicesSectionHeading h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .servicesSection .container .servicesSectionHeading p {
+    width: 95%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .servicesSection .container .servicesList {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .servicesSection .container .servicesList .element {
+    display: none;
+  }
+  .servicesSection .container .servicesList .service {
+    width: 40%;
+    padding: 35px;
+  }
+  .servicesSection .container .servicesList .service .serviceImage {
+    height: 75px;
+  }
+  .servicesSection .container .servicesList .service .serviceImage img {
+    height: 100%;
+  }
+  .servicesSection .container .servicesList .service .text h3 {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 25px 0 5px;
+  }
+  .servicesSection .container .servicesList .service .text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .servicesSection .container .learnMoreButton .learnMoreBtn {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
 }
-body .healthcareProviderSection .container {
+@media screen and (max-width: 767px) {
+  .servicesSection .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+  }
+  .servicesSection .container .servicesSectionHeading h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .servicesSection .container .servicesSectionHeading p {
+    width: 95%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicesSection .container .servicesList {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .servicesSection .container .servicesList .element {
+    display: none;
+  }
+  .servicesSection .container .servicesList .service {
+    width: 40%;
+    padding: 35px;
+  }
+  .servicesSection .container .servicesList .service .serviceImage {
+    height: 70px;
+  }
+  .servicesSection .container .servicesList .service .serviceImage img {
+    height: 100%;
+  }
+  .servicesSection .container .servicesList .service .text h3 {
+    font-size: 17px;
+    line-height: 40px;
+    margin: 25px 0 5px;
+  }
+  .servicesSection .container .servicesList .service .text p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .servicesSection .container .servicesList .circlesElement {
+    position: absolute;
+    right: 0;
+    bottom: 460px;
+    z-index: -1;
+  }
+  .servicesSection .container .learnMoreButton .learnMoreBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+  }
+}
+.healthcareProviderSection {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+}
+.healthcareProviderSection .container {
   width: 100%;
   padding: 221px 192px 0 135px;
   display: flex;
   gap: 142px;
   align-items: center;
 }
-body .healthcareProviderSection .container .rightSection h2 {
+.healthcareProviderSection .container .rightSection h2 {
   font-weight: 700;
   font-size: 36px;
+  line-height: 56px;
 }
-body .healthcareProviderSection .container .rightSection .divider {
+.healthcareProviderSection .container .rightSection .divider {
   width: 56px;
   height: 2px;
   background-color: #000;
   border-radius: 5px;
   margin: 33px 0;
 }
-body .healthcareProviderSection .container .rightSection p {
+.healthcareProviderSection .container .rightSection p {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   color: #7d7987;
   margin-bottom: 40px;
+  width: 400px;
 }
-body .healthcareProviderSection .container .rightSection .learnMoreBtn {
+.healthcareProviderSection .container .rightSection .learnMoreBtn {
   border-radius: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -192,42 +435,122 @@ body .healthcareProviderSection .container .rightSection .learnMoreBtn {
   background-color: #fff;
   border: 0;
   padding: 17px 45px;
+  font-family: "Mulish", sans-serif;
   border: 1.4px solid #458ff6;
 }
-body .downloadSection {
-  width: 100%;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .healthcareProviderSection .container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 80px 0;
+  }
+  .healthcareProviderSection .container .leftSection {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .healthcareProviderSection .container .leftSection img {
+    width: 100%;
+  }
+  .healthcareProviderSection .container .rightSection {
+    width: 40%;
+  }
+  .healthcareProviderSection .container .rightSection h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .healthcareProviderSection .container .rightSection .divider {
+    margin: 20px 0;
+  }
+  .healthcareProviderSection .container .rightSection p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .healthcareProviderSection .container .rightSection .learnMoreBtn {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
 }
-body .downloadSection .container {
+@media screen and (max-width: 767px) {
+  .healthcareProviderSection .container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 80px 0;
+  }
+  .healthcareProviderSection .container .leftSection {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .healthcareProviderSection .container .leftSection img {
+    width: 100%;
+  }
+  .healthcareProviderSection .container .rightSection {
+    width: 40%;
+  }
+  .healthcareProviderSection .container .rightSection h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .healthcareProviderSection .container .rightSection .divider {
+    margin: 20px 0;
+  }
+  .healthcareProviderSection .container .rightSection p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .healthcareProviderSection .container .rightSection .learnMoreBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+  }
+}
+.downloadSection {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+}
+.downloadSection .element {
+  position: absolute;
+  right: 0;
+}
+.downloadSection .container {
   width: 100%;
   display: flex;
   padding: 250px 164px 260px 280px;
-  gap: 71px;
+  gap: 125px;
   align-items: center;
 }
-body .downloadSection .container .leftSection {
+.downloadSection .container .leftSection {
   width: 370px;
 }
-body .downloadSection .container .leftSection h2 {
+.downloadSection .container .leftSection h2 {
   font-weight: 700;
   font-size: 36px;
   width: 255px;
   line-height: 48px;
 }
-body .downloadSection .container .leftSection .divider {
+.downloadSection .container .leftSection .divider {
   width: 56px;
   height: 2px;
   background-color: #000;
   border-radius: 5px;
   margin: 33px 0;
 }
-body .downloadSection .container .leftSection p {
+.downloadSection .container .leftSection p {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   color: #7d7987;
   margin-bottom: 40px;
 }
-body .downloadSection .container .leftSection .downloadBtn {
+.downloadSection .container .leftSection .downloadBtn {
   border-radius: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -235,140 +558,351 @@ body .downloadSection .container .leftSection .downloadBtn {
   background-color: #fff;
   border: 0;
   padding: 17px 45px;
+  font-family: "Mulish", sans-serif;
   border: 1.4px solid #458ff6;
   display: flex;
   gap: 14.8px;
   align-items: center;
 }
-body .testimonialsSection {
-  width: 100%;
-  padding: 0 240px;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .downloadSection .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    gap: 50px;
+  }
+  .downloadSection .container .leftSection {
+    width: 40%;
+  }
+  .downloadSection .container .leftSection h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .downloadSection .container .leftSection .divider {
+    margin: 20px 0;
+  }
+  .downloadSection .container .leftSection p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .downloadSection .container .leftSection .downloadBtn {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
+  .downloadSection .container .rightSection {
+    width: 60%;
+  }
+  .downloadSection .container .rightSection img {
+    width: 100%;
+  }
 }
-body .testimonialsSection .container {
+@media screen and (max-width: 767px) {
+  .downloadSection .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    gap: 50px;
+  }
+  .downloadSection .container .leftSection {
+    width: 40%;
+  }
+  .downloadSection .container .leftSection h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .downloadSection .container .leftSection .divider {
+    margin: 20px 0;
+  }
+  .downloadSection .container .leftSection p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .downloadSection .container .leftSection .downloadBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+  }
+  .downloadSection .container .rightSection {
+    width: 60%;
+  }
+  .downloadSection .container .rightSection img {
+    width: 100%;
+  }
+}
+.testimonialsSection {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+  padding: 0 240px;
+  position: relative;
+}
+.testimonialsSection .group {
+  position: absolute;
+  z-index: -1;
+  left: 190px;
+  bottom: 100px;
+}
+.testimonialsSection .container {
   width: 100%;
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
   padding: 70px 110px;
 }
-body .testimonialsSection .container .whatCustomerSays {
+.testimonialsSection .container .whatCustomerSays {
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-body .testimonialsSection .container .whatCustomerSays h2 {
+.testimonialsSection .container .whatCustomerSays h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
 }
-body .testimonialsSection .container .whatCustomerSays .divider {
+.testimonialsSection .container .whatCustomerSays .divider {
   width: 56px;
   height: 2px;
   background-color: #fff;
   border-radius: 5px;
   margin: 33px 0;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion {
+.testimonialsSection .container .whatCustomerSays .customersOpinion {
   display: flex;
-  gap: 110px;
+  gap: 50px;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection {
   display: flex;
   gap: 33px;
   align-items: center;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection img {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection img {
   border-radius: 100%;
   border: 5px solid #fff;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName h3 {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName h3 {
   font-weight: 700;
   font-size: 22px;
+  line-height: 30px;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName p {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName p {
   font-weight: 400;
   font-size: 18px;
   line-height: 48px;
   color: rgba(255, 255, 255, 0.85);
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection {
   display: flex;
   align-items: center;
 }
-body .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection p {
+.testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection p {
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.9);
-  width: 420px;
+  width: 395px;
 }
-body .latestArticleSection {
+.testimonialsSection .element {
+  position: absolute;
+  right: 250px;
+}
+.testimonialsSection .slider {
+  margin: 43px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 92px;
+}
+.testimonialsSection .slider .circles {
+  display: flex;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonialsSection {
+    width: 100%;
+    padding: 80px 0 0 0;
+  }
+  .testimonialsSection .container {
+    width: 90%;
+    padding: 80px 0;
+    margin: 0 auto;
+  }
+  .testimonialsSection .container .whatCustomerSays h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .testimonialsSection .container .whatCustomerSays .divider {
+    margin: 20px 0 40px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion {
+    width: 85%;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection {
+    width: 50%;
+    gap: 15px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection {
+    width: 50%;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .testimonialsSection .slider {
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonialsSection {
+    width: 100%;
+    padding: 80px 0 0 0;
+  }
+  .testimonialsSection .container {
+    width: 90%;
+    padding: 80px 0;
+    margin: 0 auto;
+  }
+  .testimonialsSection .container .whatCustomerSays h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .testimonialsSection .container .whatCustomerSays .divider {
+    margin: 20px 0 40px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion {
+    width: 85%;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection {
+    width: 50%;
+    gap: 15px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName h3 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .leftSection .customerName p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection {
+    width: 50%;
+  }
+  .testimonialsSection .container .whatCustomerSays .customersOpinion .rightSection p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .testimonialsSection .slider {
+    margin: 50px auto;
+  }
+}
+.latestArticleSection {
   width: 100%;
+  font-family: "Mulish", sans-serif;
+  position: relative;
 }
-body .latestArticleSection .container {
+.latestArticleSection .element {
+  position: absolute;
+  left: 190px;
+  top: 355px;
+  z-index: -1;
+}
+.latestArticleSection .container {
   width: 100%;
-  padding: 202px 240px;
+  margin: 202px 0;
+  position: relative;
 }
-body .latestArticleSection .container .articlesHeading {
+.latestArticleSection .container .vector {
+  position: absolute;
+  right: 0;
+  bottom: 380px;
+}
+.latestArticleSection .container .articlesHeading {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .latestArticleSection .container .articlesHeading h2 {
+.latestArticleSection .container .articlesHeading h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 56px;
 }
-body .latestArticleSection .container .articlesHeading .divider {
+.latestArticleSection .container .articlesHeading .divider {
   width: 56px;
   height: 2px;
   background-color: #000;
   border-radius: 5px;
   margin: 33px 0;
 }
-body .latestArticleSection .container .articles {
+.latestArticleSection .container .articles {
   display: flex;
+  justify-content: center;
   gap: 35px;
   margin: 76px 0 72px;
 }
-body .latestArticleSection .container .articles .article {
+.latestArticleSection .container .articles .article {
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
+  z-index: 99;
+  background-color: #fff;
+  width: 350px;
 }
-body .latestArticleSection .container .articles .article img {
+.latestArticleSection .container .articles .article img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-body .latestArticleSection .container .articles .article .articleText {
+.latestArticleSection .container .articles .article .articleText {
   padding: 25px 40px 25px 35px;
 }
-body .latestArticleSection .container .articles .article .articleText h3 {
+.latestArticleSection .container .articles .article .articleText h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 32px;
 }
-body .latestArticleSection .container .articles .article .articleText p {
+.latestArticleSection .container .articles .article .articleText p {
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   color: #7d7987;
   margin: 12px 0 25px;
 }
-body .latestArticleSection .container .articles .article .articleText a {
+.latestArticleSection .container .articles .article .articleText a {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   color: #4089ed;
 }
-body .latestArticleSection .container .articles .article .articleText a svg {
+.latestArticleSection .container .articles .article .articleText a svg {
   margin-left: 10px;
 }
-body .latestArticleSection .container .viewAllButton {
+.latestArticleSection .container .viewAllButton {
   display: flex;
   justify-content: center;
 }
-body .latestArticleSection .container .viewAllButton .viewAllBtn {
+.latestArticleSection .container .viewAllButton .viewAllBtn {
   border-radius: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -376,12 +910,228 @@ body .latestArticleSection .container .viewAllButton .viewAllBtn {
   background-color: #fff;
   border: 0;
   padding: 17px 45px;
+  font-family: "Mulish", sans-serif;
   border: 1.4px solid #458ff6;
 }
-body footer {
-  width: 100%;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .latestArticleSection .element {
+    display: none;
+  }
+  .latestArticleSection .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .latestArticleSection .container .vector {
+    display: none;
+  }
+  .latestArticleSection .container .articlesHeading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .latestArticleSection .container .articlesHeading .divider {
+    margin: 20px 0 40px;
+  }
+  .latestArticleSection .container .articles {
+    gap: 20px;
+    margin: 0 0 30px 0;
+  }
+  .latestArticleSection .container .articles .article img {
+    width: 100%;
+  }
+  .latestArticleSection .container .articles .article .articleText {
+    padding: 20px;
+  }
+  .latestArticleSection .container .articles .article .articleText h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .latestArticleSection .container .articles .article .articleText p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .latestArticleSection .container .articles .article .articleText a {
+    font-size: 15px;
+  }
+  .latestArticleSection .container .viewAllButton .viewAllBtn {
+    font-size: 14px;
+    padding: 13px 35px;
+    margin-bottom: 40px;
+  }
 }
-body footer .container {
+@media screen and (max-width: 767px) {
+  .latestArticleSection .element {
+    display: none;
+  }
+  .latestArticleSection .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .latestArticleSection .container .vector {
+    display: none;
+  }
+  .latestArticleSection .container .articlesHeading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .latestArticleSection .container .articlesHeading .divider {
+    margin: 20px 0 40px;
+  }
+  .latestArticleSection .container .articles {
+    gap: 20px;
+    margin: 0 0 30px 0;
+  }
+  .latestArticleSection .container .articles .article img {
+    width: 100%;
+  }
+  .latestArticleSection .container .articles .article .articleText {
+    padding: 20px;
+  }
+  .latestArticleSection .container .articles .article .articleText h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .latestArticleSection .container .articles .article .articleText p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .latestArticleSection .container .articles .article .articleText a {
+    font-size: 15px;
+  }
+  .latestArticleSection .container .viewAllButton .viewAllBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+    margin-bottom: 40px;
+  }
+}
+footer {
   width: 100%;
+  font-family: "Mulish", sans-serif;
+  position: relative;
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+footer .element {
+  position: absolute;
+  top: -70px;
+  right: 90px;
+  z-index: -1;
+}
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  padding: 120px 0;
+  gap: 145px;
+  justify-content: space-between;
+}
+footer .container .aboutBrand .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+footer .container .aboutBrand .brand .logo {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #458ff6;
+  font-weight: 700;
+  font-size: 26px;
+}
+footer .container .aboutBrand .brand h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+footer .container .aboutBrand .aboutTrafalgar1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 21px 0 31px;
+  width: 378px;
+}
+footer .container .aboutBrand .aboutTrafalgar2 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+footer .container :is(.company, .region, .help) h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+}
+footer .container :is(.company, .region, .help) ul li {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 80px 0;
+  }
+  footer .container .aboutBrand .aboutTrafalgar1 {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0 20px;
+  }
+  footer .container .aboutBrand .aboutTrafalgar2 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  footer .container :is(.company, .region, .help) h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  footer .container :is(.company, .region, .help) ul li {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 80px 0;
+  }
+  footer .container .aboutBrand .brand {
+    gap: 8px;
+  }
+  footer .container .aboutBrand .brand .logo {
+    width: 31px;
+    height: 31px;
+    font-size: 18px;
+  }
+  footer .container .aboutBrand .brand h5 {
+    font-size: 18px;
+  }
+  footer .container .aboutBrand .aboutTrafalgar1 {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 15px 0 20px;
+  }
+  footer .container .aboutBrand .aboutTrafalgar2 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  footer .container :is(.company, .region, .help) h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+  }
+  footer .container :is(.company, .region, .help) ul li {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=main.css.map */

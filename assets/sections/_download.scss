@@ -1,0 +1,137 @@
+.downloadSection {
+  width: 100%;
+  font-family: $base-font;
+  position: relative;
+
+  .element {
+    position: absolute;
+    right: 0;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    padding: 250px 164px 260px 280px;
+    gap: 125px;
+    align-items: center;
+
+    .leftSection {
+      width: 370px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 36px;
+        width: 255px;
+        line-height: 48px;
+      }
+
+      .divider {
+        @include divider();
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: $text-color;
+        margin-bottom: 40px;
+      }
+
+      .downloadBtn {
+        @include button($bg-color: $white, $color: $base-color);
+        border: 1.4px solid $base-color;
+        display: flex;
+        gap: 14.8px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .downloadSection {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 80px 0;
+      gap: 50px;
+
+      .leftSection {
+        width: 40%;
+
+        h2 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+
+        .divider {
+          margin: 20px 0;
+        }
+
+        p {
+          width: 100%;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+
+        .downloadBtn {
+          font-size: 14px;
+          padding: 13px 35px;
+        }
+      }
+
+      .rightSection {
+        width: 60%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .downloadSection {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 80px 0;
+      gap: 50px;
+
+      .leftSection {
+        width: 40%;
+
+        h2 {
+          font-size: 26px;
+          line-height: 34px;
+        }
+
+        .divider {
+          margin: 20px 0;
+        }
+
+        p {
+          width: 100%;
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+
+        .downloadBtn {
+          font-size: 12px;
+          padding: 13px 35px;
+        }
+      }
+
+      .rightSection {
+        width: 60%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

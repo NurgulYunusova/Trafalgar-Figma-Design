@@ -1,0 +1,233 @@
+.servicesSection {
+  width: 100%;
+  font-family: $base-font;
+
+  .container {
+    width: 100%;
+    padding: 192px 240px 0;
+    position: relative;
+
+    .servicesSectionHeading {
+      @include center();
+      flex-direction: column;
+
+      h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 56px;
+      }
+
+      .divider {
+        @include divider();
+      }
+
+      p {
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: $text-color;
+        width: 952px;
+      }
+    }
+
+    .servicesList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      gap: 34px;
+      margin-top: 80px;
+      margin-bottom: 72px;
+
+      .element {
+        position: absolute;
+        left: 0;
+        top: 180px;
+        z-index: -1;
+      }
+
+      .service {
+        width: 30%;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        border-radius: 20px;
+        padding: 50px 40px;
+        background-color: $white;
+
+        .serviceImage {
+          height: 95px;
+          display: flex;
+          align-items: center;
+        }
+
+        .text {
+          h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 56px;
+            margin: 30px 0 15px;
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            color: $text-color;
+          }
+        }
+      }
+
+      .circlesElement {
+        position: absolute;
+        right: 190px;
+        bottom: 460px;
+        z-index: -1;
+      }
+    }
+
+    .learnMoreButton {
+      text-align: center;
+
+      .learnMoreBtn {
+        @include button($bg-color: $white, $color: $base-color);
+        border: 1.4px solid $base-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .servicesSection {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 100px 0;
+
+      .servicesSectionHeading {
+        h2 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+        p {
+          width: 95%;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+
+      .servicesList {
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .element {
+          display: none;
+        }
+
+        .service {
+          width: 40%;
+          padding: 35px;
+
+          .serviceImage {
+            height: 75px;
+
+            img {
+              height: 100%;
+            }
+          }
+
+          .text {
+            h3 {
+              font-size: 20px;
+              line-height: 40px;
+              margin: 25px 0 5px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .learnMoreButton {
+        .learnMoreBtn {
+          font-size: 14px;
+          padding: 13px 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .servicesSection {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 0 100px 0;
+
+      .servicesSectionHeading {
+        h2 {
+          font-size: 28px;
+          line-height: 38px;
+        }
+        p {
+          width: 95%;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .servicesList {
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        .element {
+          display: none;
+        }
+
+        .service {
+          width: 40%;
+          padding: 35px;
+
+          .serviceImage {
+            height: 70px;
+
+            img {
+              height: 100%;
+            }
+          }
+
+          .text {
+            h3 {
+              font-size: 17px;
+              line-height: 40px;
+              margin: 25px 0 5px;
+            }
+
+            p {
+              font-size: 13px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .circlesElement {
+          position: absolute;
+          right: 0;
+          bottom: 460px;
+          z-index: -1;
+        }
+      }
+
+      .learnMoreButton {
+        .learnMoreBtn {
+          font-size: 12px;
+          padding: 13px 35px;
+        }
+      }
+    }
+  }
+}

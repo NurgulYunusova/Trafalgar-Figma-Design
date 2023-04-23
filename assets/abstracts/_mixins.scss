@@ -4,14 +4,15 @@
   justify-content: center;
 }
 
-@mixin button($bg-color: $base-color, $color: $white) {
+@mixin button($bg-color: $base-color, $color: $white, $font-size: 18px) {
   border-radius: 55px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: $font-size;
   color: $color;
   background-color: $bg-color;
   border: 0;
   padding: 17px 45px;
+  font-family: $base-font;
 }
 
 @mixin divider($bg-color: #000) {

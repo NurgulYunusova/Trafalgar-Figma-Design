@@ -1,0 +1,128 @@
+.mainPageSection {
+  width: 100%;
+  font-family: $base-font;
+
+  .container {
+    width: 100%;
+    padding: 0 163px 0 190px;
+    display: flex;
+    align-items: flex-start;
+    gap: 109px;
+
+    .leftSection {
+      h1 {
+        font-weight: 700;
+        color: #000;
+        font-size: 48px;
+        line-height: 56px;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 32px;
+        color: $text-color;
+        margin: 25px 0 45px;
+      }
+
+      .consultTodayBtn {
+        @include button();
+      }
+    }
+
+    .rightSection {
+      img {
+        width: 693px;
+        height: 598px;
+        margin-top: -110px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainPageSection {
+    .container {
+      gap: 30px;
+      padding: 30px 0;
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+
+      .leftSection {
+        width: 40%;
+
+        h1 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 20px 0 35px;
+          line-height: 28px;
+        }
+
+        .consultTodayBtn {
+          font-size: 14px;
+          padding: 13px 35px;
+        }
+      }
+      .rightSection {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainPageSection {
+    margin: 30px 0;
+
+    .container {
+      gap: 30px;
+      padding: 30px 0;
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+
+      .leftSection {
+        width: 40%;
+
+        h1 {
+          font-size: 30px;
+          line-height: 34px;
+        }
+
+        p {
+          font-size: 16px;
+          margin: 20px 0 30px;
+          line-height: 28px;
+        }
+
+        .consultTodayBtn {
+          font-size: 12px;
+          padding: 13px 35px;
+        }
+      }
+      .rightSection {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          margin: 0;
+          height: fit-content;
+        }
+      }
+    }
+  }
+}

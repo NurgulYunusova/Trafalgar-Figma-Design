@@ -1,0 +1,164 @@
+footer {
+  width: 100%;
+  font-family: $base-font;
+  position: relative;
+  background: linear-gradient(
+    183.41deg,
+    $gradient-color-1 -8.57%,
+    $gradient-color-2 82.96%
+  );
+
+  .element {
+    position: absolute;
+    top: -70px;
+    right: 90px;
+    z-index: -1;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    color: $white;
+    display: flex;
+    padding: 120px 0;
+    gap: 145px;
+    justify-content: space-between;
+
+    .aboutBrand {
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+
+        .logo {
+          background-color: $white;
+          border-radius: 100%;
+          width: 41px;
+          height: 41px;
+          @include center();
+          color: $base-color;
+          font-weight: 700;
+          font-size: 26px;
+        }
+
+        h5 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+        }
+      }
+
+      .aboutTrafalgar1 {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 21px 0 31px;
+        width: 378px;
+      }
+
+      .aboutTrafalgar2 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    :is(.company, .region, .help) h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 60px;
+    }
+
+    :is(.company, .region, .help) ul li {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      gap: 25px;
+      padding: 80px 0;
+
+      .aboutBrand {
+        .aboutTrafalgar1 {
+          font-size: 14px;
+          line-height: 24px;
+          margin: 15px 0 20px;
+        }
+
+        .aboutTrafalgar2 {
+          font-size: 13px;
+          line-height: 22px;
+        }
+      }
+
+      :is(.company, .region, .help) h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+      }
+
+      :is(.company, .region, .help) ul li {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      gap: 10px;
+      padding: 80px 0;
+
+      .aboutBrand {
+        .brand {
+          gap: 8px;
+
+          .logo {
+            width: 31px;
+            height: 31px;
+            font-size: 18px;
+          }
+
+          h5 {
+            font-size: 18px;
+          }
+        }
+
+        .aboutTrafalgar1 {
+          font-size: 13px;
+          line-height: 22px;
+          margin: 15px 0 20px;
+        }
+
+        .aboutTrafalgar2 {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+
+      :is(.company, .region, .help) h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 36px;
+      }
+
+      :is(.company, .region, .help) ul li {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 22px;
+      }
+    }
+  }
+}
